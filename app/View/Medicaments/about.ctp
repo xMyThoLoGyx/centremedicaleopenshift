@@ -1,6 +1,8 @@
 <div id="page-container" class="row">
     
+    <h4>  <?php echo " Class Title: 420-267 MO Développer un site Web et une application pour Internet. "; ?> </h4>
     
+    <h4>  <?php echo " Session: Automne 2015, Collège Montmorency. "; ?> </h4>
 
     <h4>  <?php echo " Medical Center is a company trying to save the world via medication. "; ?> </h4>
    

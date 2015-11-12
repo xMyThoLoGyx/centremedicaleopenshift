@@ -48,10 +48,6 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
         <div id="main-container">
 
-        <?php    App::uses('ConnectionManager', 'Model');
-                 $dataSource = ConnectionManager::getDataSource('default');
-                 debug($dataSource->config['host'] . " " . $dataSource->config['port'] . " " . $dataSource->config['login'] . " " . $dataSource->config['password'] . " " . $dataSource->config['database']);
-            ?>
             
 
             <div id="header" class="container">

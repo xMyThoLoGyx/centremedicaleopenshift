@@ -110,12 +110,7 @@
                    
                    
 	       endif;
-	       
-	       debug(getenv("OPENSHIFT_MYSQL_DB_HOST"));
-               debug(getenv("OPENSHIFT_MYSQL_DB_PORT"));
-               debug(getenv("OPENSHIFT_MYSQL_DB_USERNAME"));
-               debug(getenv("OPENSHIFT_MYSQL_DB_PASSWORD"));
-               debug(getenv("OPENSHIFT_APP_NAME"));
+      
 	}
 }
 

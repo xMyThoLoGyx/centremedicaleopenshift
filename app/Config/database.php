@@ -100,25 +100,22 @@
 	           $this->default['login']      = getenv("OPENSHIFT_MYSQL_DB_USERNAME");
 	           $this->default['password']   = getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
 	           $this->default['database']   = getenv("OPENSHIFT_APP_NAME");
-
+                  
 	       else:
 	           $this->default['host']       = "localhost";
 	           $this->default['port']       = "3306";
 	           $this->default['login']      = "root";
 	           $this->default['password']   = "root";
 	           $this->default['database']   = "centremedicale";
-                  
+                   
                    
 	       endif;
-               
-               debug($this->default['host']);
-               debug($this->default['port']);
-               debug($this->default['login']);
-               debug($this->default['password']);
-               debug($this->default['database']);
-               
-               
-               die();
+	       
+	       debug(getenv("OPENSHIFT_MYSQL_DB_HOST"));
+               debug(getenv("OPENSHIFT_MYSQL_DB_PORT"));
+               debug(getenv("OPENSHIFT_MYSQL_DB_USERNAME"));
+               debug(getenv("OPENSHIFT_MYSQL_DB_PASSWORD"));
+               debug(getenv("OPENSHIFT_APP_NAME"));
 	}
 }
 

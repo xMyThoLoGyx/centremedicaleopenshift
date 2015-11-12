@@ -1,0 +1,323 @@
+2015-11-12 20:37:58 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1049] Unknown database \'centremedicale\'',
+  'enabled' => true,
+)
+Request URL: /centremedicale2-master/
+Stack Trace:
+#0 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3648): Model->setSource('patients')
+#5 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\Controller\PatientsController.php(29): Controller->paginate()
+#10 [internal function]: PatientsController->index()
+#11 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#12 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#14 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-12 20:44:45 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1049] Unknown database \'centresmedicale\'',
+  'enabled' => true,
+)
+Request URL: /centremedicale2-master/
+Stack Trace:
+#0 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3648): Model->setSource('patients')
+#5 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\Controller\PatientsController.php(29): Controller->paginate()
+#10 [internal function]: PatientsController->index()
+#11 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#12 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#14 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-12 20:45:39 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /centremedicale2-master/
+Stack Trace:
+#0 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\ConnectionManager.php(91): ConnectionManager::_getConnectionObject('default')
+#1 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#2 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#3 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3648): Model->setSource('patients')
+#4 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#5 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#6 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#8 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\Controller\PatientsController.php(29): Controller->paginate()
+#9 [internal function]: PatientsController->index()
+#10 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#11 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#13 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-12 20:46:27 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /centremedicale2-master/
+Stack Trace:
+#0 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3648): Model->setSource('patients')
+#5 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\Controller\PatientsController.php(29): Controller->paginate()
+#10 [internal function]: PatientsController->index()
+#11 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#12 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#14 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-12 20:46:50 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+',
+  'enabled' => true,
+)
+Request URL: /centremedicale2-master/
+Stack Trace:
+#0 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3648): Model->setSource('patients')
+#5 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\Controller\PatientsController.php(29): Controller->paginate()
+#10 [internal function]: PatientsController->index()
+#11 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#12 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#14 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-12 20:47:16 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Hôte inconnu. ',
+  'enabled' => true,
+)
+Request URL: /centremedicale2-master/
+Stack Trace:
+#0 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3648): Model->setSource('patients')
+#5 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\Controller\PatientsController.php(29): Controller->paginate()
+#10 [internal function]: PatientsController->index()
+#11 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#12 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#14 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-12 20:53:52 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'rot\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /centremedicale2-master/
+Stack Trace:
+#0 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3648): Model->setSource('patients')
+#5 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\Controller\PatientsController.php(29): Controller->paginate()
+#10 [internal function]: PatientsController->index()
+#11 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#12 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#14 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-12 20:55:03 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'rot\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /centremedicale2-master/
+Stack Trace:
+#0 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3648): Model->setSource('patients')
+#5 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\Controller\PatientsController.php(29): Controller->paginate()
+#10 [internal function]: PatientsController->index()
+#11 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#12 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#14 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-12 20:56:08 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+',
+  'enabled' => true,
+)
+Request URL: /centremedicale2-master/
+Stack Trace:
+#0 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3648): Model->setSource('patients')
+#5 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\Controller\PatientsController.php(29): Controller->paginate()
+#10 [internal function]: PatientsController->index()
+#11 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#12 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#14 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-12 20:56:45 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'rot\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /centremedicale2-master/
+Stack Trace:
+#0 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3648): Model->setSource('patients')
+#5 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\Controller\PatientsController.php(29): Controller->paginate()
+#10 [internal function]: PatientsController->index()
+#11 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#12 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#14 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-12 20:59:17 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+',
+  'enabled' => true,
+)
+Request URL: /centremedicale2-master/
+Stack Trace:
+#0 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3648): Model->setSource('patients')
+#5 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\Controller\PatientsController.php(29): Controller->paginate()
+#10 [internal function]: PatientsController->index()
+#11 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#12 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#14 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-12 20:59:38 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Hôte inconnu. ',
+  'enabled' => true,
+)
+Request URL: /centremedicale2-master/
+Stack Trace:
+#0 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3648): Model->setSource('patients')
+#5 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\Controller\PatientsController.php(29): Controller->paginate()
+#10 [internal function]: PatientsController->index()
+#11 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#12 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#14 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-12 21:00:08 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+',
+  'enabled' => true,
+)
+Request URL: /centremedicale2-master/
+Stack Trace:
+#0 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3648): Model->setSource('patients')
+#5 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\Controller\PatientsController.php(29): Controller->paginate()
+#10 [internal function]: PatientsController->index()
+#11 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#12 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#14 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-12 21:21:08 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\app\Config\database.php, line 118]
+2015-11-12 21:21:08 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /centremedicale2-master/
+Stack Trace:
+#0 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\Users\\122345...', 118)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\Users\\122345...', 118, Array)
+#2 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\Users\\122345...', 118, Array)
+#3 C:\Users\1223452.CMONTMORENCY\Downloads\UniServerZ\www\centremedicale2-master\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
